@@ -1,0 +1,56 @@
+* { margin: 0px;
+padding: 0px; outline: 0;
+}
+t-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#menu {  text-align: center;
+font-family: 'Oswald';/* AQUI AUMENTO LA LETRA DEL MENU */
+width: 990px;
+margin: 0px auto;
+
+font-family: 'Oswald';
+}
+#menu ul { list-style-type: none;}
+#menu ul li.nivel1 { float: left;
+/*width: 162px; este me permite hacer los botones del menú mas grandes aliniandolos a la derecha*/
+/*margin-right: 2px; este mepermite crear un margen blanco medio grande*/
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #399;
+	position: relative;
+	padding-top: 6px;/* ESTE ME PERMITE REDUCIR EL TAMAÑO DE LAS ETRAS DEL MENU PERO DEL DESPEGABLE */
+	padding-right: 17px;/* ESTE ME PERMITE HACER MAS ANCHO EL BOTON DEL MENU A LA DERECHA */
+	padding-bottom: 6px; /* ESTE ME PERMITE REDUCIR EL TAMAÑO DE LAS ETRAS DEL MENU PERO DEL DESPEGABLE */
+	padding-left: 14px;  /* ESTE ME PERMITE HACER MAS ANCHO EL BOTON DEL MENU A LA IZQUIERDA */
+}
+#menu ul li:hover {position: relative;
+}
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {background-color: #6CC;/* ESTA LINEA ME PERMITE DAR EL COLOR DE LOS BOTONES DEL MENU */
+color: #000;
+position: relative;
+}
+#menu ul li a.nivel1 {display: block!important;display: none;
+position: relative;
+}
+#menu ul li ul {display: none;
+}
+#menu ul li a:hover ul, #menu ul li:hover ul {display: block;
+position: absolute;left: 0px;
+}
+#menu ul li ul li a {
+	width: 160px;
+	padding: 6px 0px 6px 20px;/* ESTOS CUATRO VALORES SON EL PRIMERO ES ARRIBA, DERECHA, AVAJO ,IZQUIERDA COMO SI FUERA LA AGUJA DEL RELOJ . PERMITE ENTRAR LAS LETRAS DE LOS BOTONES DEL MENU*/
+	border-top-color: #000;
+	text-align: left;/* ME ALINEA LAS LETRAS DEL LOS BOTONES DEL MENU */
+}
+#menu ul li ul li a:hover {border-top-color: #000;
+position: relative;
+}
+table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}
